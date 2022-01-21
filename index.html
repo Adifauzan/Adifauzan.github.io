@@ -15,10 +15,14 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
 
+     <!-- AOS -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Skiills css -->
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
     </script>
+
 
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -63,7 +67,7 @@
     <section class="jumbotron text-center">
       <img src="img/bingkai.jpg" alt="Adi Fauzan" width="200" class="rounded-circle" />
       <h1 class="display-4">Mochamad Adi Fauzan</h1>
-      <p class="lead">Fresh Graduate | Backend Web Developer | Design Grafis</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#d3d3d3"
@@ -80,20 +84,20 @@
     <section id="about">
       <div class="container">
         <div class="row justify-content-center text-center mb-3">
-          <div class="col-md-3">
+          <div class="col">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center text-center fs-5">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
             <p>Saya Mochamad Adi Fauzan Tanggal Lahir: 29 Juli 1998 | Alamat: Jl.Pisangan Lama 3 Pulogadung Jakarta Timur| lulusan dari Universitas Bina Sarana Informatika | Program Ahli Madya | Jurusan Teknologi Komputer Th 2020.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <p>
               Basic Backend Web Developer dan Desain Grafis dan saya seorang Fresh Graduate bermotivasi dan semangat yang kuat dalam bekerja, saya juga senang berintraksi sosial dengan siapapun dan saya memiliki kemauan untuk selalu belajar
               memperbaiki diri, dan saya seorang yang bertanggung jawab dalam hal pekerjaan.
             </p>
-            <a href="Download CV/Cv__Adi.pdf" class="btn btn-primary">Download CV</a>
+
           </div>
         </div>
       </div>
@@ -163,7 +167,7 @@
         </div>
         <div class="row">
           <div class="col-lg-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right"  data-aos-duration="500">
               <img src="img/projects/1.jpg" class="card-img-top" alt="project1" />
               <div class="card-body">
                 <p class="card-text">
@@ -175,7 +179,7 @@
             </div>
           </div>
           <div class="col-lg-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="100">
               <img src="img/projects/2.jpg" class="card-img-top" alt="project2" />
               <div class="card-body">
                 <p class="card-text">
@@ -185,7 +189,7 @@
             </div>
           </div>
           <div class="col-lg-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="200">
               <img src="img/projects/3.jpg" class="card-img-top" alt="project3" />
               <div class="card-body">
                 <p class="card-text">
@@ -263,6 +267,25 @@
     </footer>
     <!-- Akhir Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, 
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', {duration: 2, delay: 1.5, text: 'Fresh Graduate | Backend Web Developer | Design Grafis'});
+      gsap.from('.jumbotron img', {duration: 1, rotateY: 360, opacity: 0 });
+      gsap.from('.navbar', {duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce'});
+      gsap.from('.display-4', {duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
+    </script>
+
     <script>
       $(".skill-per").each(function () {
         var $this = $(this);
