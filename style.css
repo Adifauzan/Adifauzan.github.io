@@ -3,6 +3,9 @@
   background-color: #dbbda4;
 }
 
+#skills {
+  background-color: #dbbda4;
+}
 .skills {
   width: 100%;
   max-width: 600px;
@@ -16,12 +19,12 @@
 }
 .skill-bar {
   height: 20px;
-  background: #cacaca;
+  background: #ffffff;
   border-radius: 8px;
 }
 .skill-per {
   height: 20px;
-  background-color: #32cd32;
+  background-color: #221c81;
   border-radius: 8px;
   width: 0;
   transition: 1s linear;
