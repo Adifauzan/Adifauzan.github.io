@@ -1,10 +1,10 @@
 .jumbotron {
   padding-top: 6rem;
-  background-color: #dbbda4;
+  background-image: url(img/pantai1.jpg);
 }
 
 #skills {
-  background-color: #dbbda4;
+  background-color: #d2b48c;
 }
 .skills {
   width: 100%;
@@ -35,7 +35,7 @@
   position: absolute;
   padding: 4px 6px;
   background-color: #000;
-  color: #fff;
+  color: #ffffff;
   font-size: 12px;
   border-radius: 4px;
   top: -35px;
@@ -55,7 +55,7 @@
 }
 
 #projects {
-  background-color: #dbbda4;
+  background-color: #d2b48c;
 }
 
 section {
