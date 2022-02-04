@@ -1,6 +1,7 @@
 .jumbotron {
   padding-top: 6rem;
-  background-image: url(img/pantai1.jpg);
+  background-image: url(img/cinema.jpg);
+  background-position: bottom;
 }
 
 #skills {
@@ -55,7 +56,8 @@
 }
 
 #projects {
-  background-color: #d2b48c;
+  background-image: url(img/project.jpg);
+  background-position: bottom;
 }
 
 section {
