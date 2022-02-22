@@ -1,11 +1,10 @@
 .jumbotron {
   padding-top: 6rem;
-  background-image: url(img/cinema.jpg);
-  background-position: bottom;
+  background-color: #9aacb8;
 }
 
 #skills {
-  background-color: #d2b48c;
+  background-color: bisque;
 }
 .skills {
   width: 100%;
@@ -20,7 +19,7 @@
 }
 .skill-bar {
   height: 20px;
-  background: #ffffff;
+  background: #f1f8f7;
   border-radius: 8px;
 }
 .skill-per {
@@ -36,7 +35,7 @@
   position: absolute;
   padding: 4px 6px;
   background-color: #000;
-  color: #ffffff;
+  color: #ebf4fad7;
   font-size: 12px;
   border-radius: 4px;
   top: -35px;
@@ -56,8 +55,7 @@
 }
 
 #projects {
-  background-image: url(img/cinema.jpg);
-  background-position: bottom;
+  background-color: #9aacb8;
 }
 
 section {
