@@ -65,7 +65,7 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/-8btv4r.jpg" alt="Adi Fauzan" width="200" class="rounded-circle" />
+      <img src="img/-8btv4r.jpg" alt="Adi Fauzan" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Hello I'M Mochamad Adi Fauzan</h1>
       <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -94,8 +94,8 @@
           </div>
           <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <p>
-              Saya memiliki Basic sebagai Backend Developer dan saya seorang Fresh Graduate mempunyai motivasi dan semangat yang kuat dalam bekerja, saya juga senang berintraksi sosial dengan siapapun dan saya memiliki kemauan untuk selalu belajar
-              memperbaiki diri, dan saya seorang yang bertanggung jawab dalam hal pekerjaan.
+              Saya seorang Fresh Graduate memiliki Basic di Website Developer dan saya seorang yang supel juga senang berintraksi sosial dengan siapapun dan saya memiliki kemauan untuk selalu belajar
+              memperbaiki diri, dan saya seorang yang bertanggung jawab dalam pekerjaan saya.
             </p>
             <a class="btn btn-primary" href="assets/img/cvadi.pdf" role="button">Unduh CV</a>
           </div>
@@ -339,5 +339,43 @@
           .catch(error => console.error('Error!', error.message))
       });
     </script>
+
+ 
+	<div id="clock"></div>
+  <script type="text/javascript"> 
+
+  function showTime() {
+      var a_p = "";
+      var today = new Date();
+      var curr_hour = today.getHours();
+      var curr_minute = today.getMinutes();
+      var curr_second = today.getSeconds();
+      if (curr_hour < 12) {
+          a_p = "AM";
+      } else {
+          a_p = "PM";
+      }
+      if (curr_hour == 0) {
+          curr_hour = 12;
+      }
+      if (curr_hour > 12) {
+          curr_hour = curr_hour - 12;
+      }
+      curr_hour = checkTime(curr_hour);
+      curr_minute = checkTime(curr_minute);
+      curr_second = checkTime(curr_second);
+   document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+      }
+
+  function checkTime(i) {
+      if (i < 10) {
+          i = "0" + i;
+      }
+      return i;
+  }
+  setInterval(showTime, 500);
+
+  </script>
+
   </body>
 </html>
