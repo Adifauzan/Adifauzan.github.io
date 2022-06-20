@@ -34,7 +34,7 @@
   content: attr(per);
   position: absolute;
   padding: 4px 6px;
-  background-color: #000;
+  background-color: #000000;
   color: #ebf4fad7;
   font-size: 12px;
   border-radius: 4px;
@@ -47,7 +47,7 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  background-color: #000;
+  background-color: #000000;
   top: -16px;
   right: 0;
   transform: translateX(50%) rotate(45deg);

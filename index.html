@@ -80,9 +80,11 @@
 
     <!-- Akhir Jumbotron -->
 
+
     <!-- About -->
     <section id="about">
       <div class="container">
+        
         <div class="row justify-content-center text-center mb-3">
           <div class="col">
             <h2>About Me</h2>
@@ -269,6 +271,7 @@
     </section>
     <!-- Akhir Contact -->
 
+    
     <!-- footer -->
     <footer class="bg-primary text-white text-center pb-5">
       <p>2022 Copyright Created With <i class="bi bi-suit-heart-fill text-white"></i> By <a href="https://www.instagram.com/adifauzan__/" class="text-white fw-bold">Adi Fauzan</a></p>
@@ -283,12 +286,16 @@
       });
     </script>
 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
 
     <script>
+
+
+        
       gsap.registerPlugin(TextPlugin);
-      gsap.to('.lead', {duration: 3, delay: 1.5, text: 'Fresh Graduate | Website Developer'});
+      gsap.to('.lead', {duration: 3, delay: 1.5, text: 'Fresh Graduate'});
       gsap.from('.jumbotron img', {duration: 1, rotateY: 360, opacity: 0 });
       gsap.from('.navbar', {duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce'});
       gsap.from('.display-4', {duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
@@ -303,6 +310,7 @@
           { animatedValue: per },
           {
             duration: 1000,
+            
             step: function () {
               $this.attr("per", Math.floor(this.animatedValue) + "%");
             },
@@ -335,6 +343,7 @@
         myAlert.classList.toggle('d-none');
         //reset formnya
         form.reset();
+        
             console.log('Success!', response)})
           .catch(error => console.error('Error!', error.message))
       });
